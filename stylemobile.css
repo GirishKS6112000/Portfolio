@@ -1,0 +1,151 @@
+@media screen and (max-width:768px){
+
+.common{
+		margin-left: 100px;
+	}
+	.nav{
+		width: 100%;
+		
+	}
+	
+	.navbar a{
+		font-size: 15px;
+	}
+	.nav .navbar{
+		margin-left: -50px;
+	}
+	.input{
+		margin-left: 100px;
+	}
+	.name>h1{
+		font-size: 26px;
+		margin-left: -20px;
+	}
+	.role>p{
+		font-size: 20px;
+		margin-left: -20px;
+	}
+	footer>p{
+		margin-left: -20px	;
+		margin-top: 20px;
+		font-size: 12px;
+	}
+
+}
+
+
+@media screen and (max-width:480px){
+	.common{
+		margin-left: 50px;
+	}
+	.nav{
+		width: 100%;
+		
+	}
+	
+	.navbar a{
+		font-size: 12px;
+	}
+	.nav .navbar{
+		margin-left:-50px;
+	}
+	.input{
+		margin-left: 100px;
+	}
+	.name>h1{
+		font-size: 26px;
+		margin-left: -20px;
+	}
+	.role>p{
+		font-size: 20px;
+		margin-left: -20px;
+	}
+	footer>p{
+		margin-left: -20px	;
+		margin-top: 20px;
+		font-size: 12px;
+	}
+	
+}
+
+@media screen and (max-width:311px){
+	.common{
+		margin-left: 50px;
+	}
+	.nav{
+		width: 95%;
+		
+	}
+	 .navbar svg{
+		display: block;
+	}
+	.navbar a{
+		font-size: 12px;
+	}
+
+	 .social a>svg{
+		background-color: white;
+		border-radius: 10px;
+	}
+	.nav .navbar{
+		margin-left: 0px;
+	}
+	.input{
+		margin-left: 100px;
+	}
+	.name>h1{
+		font-size: 20px;
+		margin-left: 0px;
+	}
+	.role>p{
+		font-size: 20px;
+		margin-left: 0px;
+	}
+	.contact .mob{
+		margin-left: -50px;
+	}
+	.bi-github{
+		fill: black;
+	}
+}
+
+@media screen and (max-width:360px){
+	.common{
+		margin-left: 50px;
+	}
+	.nav{
+		width: 95%;
+		
+	}
+	 .navbar svg{
+		display: block;
+	}
+	.navbar a{
+		font-size: 12px;
+	}
+
+	 .social a>svg{
+		background-color: white;
+		border-radius: 10px;
+	}
+	.nav .navbar{
+		margin-left: 0px;
+	}
+	.input{
+		margin-left: 100px;
+	}
+	.name>h1{
+		font-size: 20px;
+		margin-left: 0px;
+	}
+	.role>p{
+		font-size: 20px;
+		margin-left: 0px;
+	}
+	.contact .mob{
+		margin-left: -50px;
+	}
+	.bi-github{
+		fill: black;
+	}
+}

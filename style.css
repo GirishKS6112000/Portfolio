@@ -1,0 +1,189 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	
+	background-color: black;
+	color: white;
+}
+
+.nav{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	background-color: black;
+	position: fixed;
+	width: 100%;
+	margin-top: -100px;
+	z-index: 22;
+}
+.nav .navbar>a{
+	display: inline-block;
+	padding: 10px;
+	color: white;
+	text-decoration: none;
+}
+
+.nav .navbar>a:hover{
+	color: red;
+	font-weight: bold;
+}
+
+.name{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	margin-top: 100px;
+}
+
+.role{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	
+}
+
+.image{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+.about{
+	display: flex;
+	flex-direction: column;
+	margin-left: 200px;
+	margin-top: 50px;
+	width: 70%;
+}
+.about>h2{
+	justify-self: flex-start;
+	
+}
+
+.about>p{
+	justify-self: center;
+	margin-top: 10px;
+	
+}
+.about>hr{
+	width: 20%;
+	margin-top: 10px;
+	
+}
+
+.skill{
+	display: flex;
+	flex-direction: column;
+	width: 70%;
+	margin-top: 50px;
+	margin-left: 200px;
+	position: relative;
+}
+
+.ul{
+	display: flex;
+	flex-direction: column;
+}
+.skill>hr{
+	width: 20%;
+	margin-top: 10px;
+}
+.skill>#ul{
+	margin-top: 10px;
+	margin-left: 20px;
+}
+
+.input{
+	display: flex;
+	flex-direction: column;
+	position: absolute;
+	left: 15%;
+	top: 19%;
+}
+.input>input{
+	width: 100%;
+	padding: 1px;
+}
+
+.dwn{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	
+}
+.dwn a>button{
+	cursor: pointer;
+	padding: 7px;
+	background-color: rgb(63, 63, 206);
+	color: white;
+	border-radius: 10px;
+	
+}
+.dwn a>button:hover{
+	background-color: blue;
+	font-weight: bold;
+	transition-duration: 0.2s;
+}
+
+.project{
+	
+	display: flex;
+	flex-direction: column;
+	margin-left: 200px;
+	margin-top: 50px;
+}
+
+.project>hr{
+	width: 20%;
+	margin-top: 10px;
+}
+.project>.cms{
+	margin-top: 20px;
+	width: 70%;
+}
+
+.project .cms>h3{
+	padding-bottom: 7px;
+}
+.project figure{
+	margin-top: 20px;
+}
+.project figure>img{
+	width: 200px;
+}
+.project figure>img:hover{
+	width: 300px;
+	transition: 1s;
+}
+
+.contact{
+	display: flex;
+	flex-direction: column;
+	width: 70%;
+	align-items: center;
+	margin-left: 200px;
+	margin-top: 50px;
+}
+.contact>hr{
+	width: 20%;
+	margin-top: 20px;
+}
+
+.contact>p{
+font-size: 20px;
+padding: 5px;
+}
+
+footer{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	
+	margin:50px ;
+}
+footer .social>a{
+	padding: 5px;
+}
