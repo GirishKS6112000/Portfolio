@@ -73,7 +73,14 @@ body{
 	margin-top: 10px;
 	
 }
-
+.drrp{
+	color: rgb(255, 123, 0);
+	text-decoration: none;
+}
+.drrp:hover{
+	color: rgb(120, 230, 120);
+	text-decoration: none;
+}
 .skill{
 	display: flex;
 	flex-direction: column;
