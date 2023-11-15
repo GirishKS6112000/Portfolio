@@ -1,232 +1,430 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <link rel="stylesheet" type="text/css" href="style.css">
-  <link rel="stylesheet" type="text/css" href="stylemobile.css">
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Portfolio</title>
-</head>
-<body>
+  <head>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="stylemobile.css" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Portfolio</title>
+  </head>
+  <body>
+    <div class="nav">
+      <div class="navbar">
+        <a class="nav-home" href="#"
+          ><svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="20"
+            height="20"
+            fill="currentColor"
+            class="bi bi-house-door-fill"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M6.5 14.5v-3.505c0-.245.25-.495.5-.495h2c.25 0 .5.25.5.5v3.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5Z"
+            />
+          </svg>
+          Home
+        </a>
+        <a href="#about"
+          ><svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="20"
+            height="20"
+            fill="currentColor"
+            class="bi bi-file-person"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M12 1a1 1 0 0 1 1 1v10.755S12 11 8 11s-5 1.755-5 1.755V2a1 1 0 0 1 1-1h8zM4 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H4z"
+            />
+            <path d="M8 10a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
+          </svg>
+          About</a
+        >
+        <a href="#skill"
+          ><svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="20"
+            height="20"
+            fill="currentColor"
+            class="bi bi-journal-check"
+            viewBox="0 0 16 16"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M10.854 6.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7.5 8.793l2.646-2.647a.5.5 0 0 1 .708 0z"
+            />
+            <path
+              d="M3 0h10a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-1h1v1a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1v1H1V2a2 2 0 0 1 2-2z"
+            />
+            <path
+              d="M1 5v-.5a.5.5 0 0 1 1 0V5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 3v-.5a.5.5 0 0 1 1 0V8h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 3v-.5a.5.5 0 0 1 1 0v.5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1z"
+            />
+          </svg>
+          Skills</a
+        >
+        <a href="#project"
+          ><svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="20"
+            height="20"
+            fill="currentColor"
+            class="bi bi-eye-fill"
+            viewBox="0 0 16 16"
+          >
+            <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z" />
+            <path
+              d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8zm8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z"
+            />
+          </svg>
+          Projects</a
+        >
+        <a href="#contact"
+          ><svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="20"
+            height="20"
+            fill="currentColor"
+            class="bi bi-person-lines-fill"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M6 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-5 6s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H1zM11 3.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5zm.5 2.5a.5.5 0 0 0 0 1h4a.5.5 0 0 0 0-1h-4zm2 3a.5.5 0 0 0 0 1h2a.5.5 0 0 0 0-1h-2zm0 3a.5.5 0 0 0 0 1h2a.5.5 0 0 0 0-1h-2z"
+            />
+          </svg>
+          Contact</a
+        >
+      </div>
+    </div>
+    <header class="name">
+      <h1>I'm Girish Chandra Sahoo</h1>
+    </header>
+    <br />
 
-  <div class="nav">
-    <div class="navbar">
-    <a class="nav-home" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-house-door-fill" viewBox="0 0 16 16">
-  <path d="M6.5 14.5v-3.505c0-.245.25-.495.5-.495h2c.25 0 .5.25.5.5v3.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5Z"/>
-</svg> Home </a>
-    <a href="#about"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-file-person" viewBox="0 0 16 16">
-  <path d="M12 1a1 1 0 0 1 1 1v10.755S12 11 8 11s-5 1.755-5 1.755V2a1 1 0 0 1 1-1h8zM4 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H4z"/>
-  <path d="M8 10a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
-</svg> About</a>
-    <a href="#skill"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-journal-check" viewBox="0 0 16 16">
-  <path fill-rule="evenodd" d="M10.854 6.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7.5 8.793l2.646-2.647a.5.5 0 0 1 .708 0z"/>
-  <path d="M3 0h10a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-1h1v1a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1v1H1V2a2 2 0 0 1 2-2z"/>
-  <path d="M1 5v-.5a.5.5 0 0 1 1 0V5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 3v-.5a.5.5 0 0 1 1 0V8h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 3v-.5a.5.5 0 0 1 1 0v.5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1z"/>
-</svg> Skills</a>
-    <a href="#project"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
-  <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z"/>
-  <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8zm8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z"/>
-</svg> Projects</a>
-    <a href="#contact"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-person-lines-fill" viewBox="0 0 16 16">
-  <path d="M6 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-5 6s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H1zM11 3.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5zm.5 2.5a.5.5 0 0 0 0 1h4a.5.5 0 0 0 0-1h-4zm2 3a.5.5 0 0 0 0 1h2a.5.5 0 0 0 0-1h-2zm0 3a.5.5 0 0 0 0 1h2a.5.5 0 0 0 0-1h-2z"/>
-</svg> Contact</a>
-</div>
-  </div>
-  <header  class="name">
-    <h1>I'm Girish Chandra Sahoo</h1>
-    
-  </header><br>
+    <header class="role">
+      <p>Full Stack Web Developer</p>
+    </header>
 
-  <header class="role">
-    <p>Full Stack Web Developer</p>
-  </header>
+    <div class="image">
+      <img src="images/Girishb&w.png" width="300px" />
+    </div>
 
+    <div id="about"></div>
+    <div class="about common">
+      <h2>About</h2>
+      <hr />
+      <p>
+        I'm a dedicated Full Stack Web Developer with a passion for crafting
+        exceptional online experiences. With a strong foundation in both
+        front-end and back-end technologies, I specialize in transforming ideas
+        into functional, user-friendly websites. My commitment to clean code,
+        attention to detail, and a drive for innovation make me a valuable asset
+        in the world of web development.<br /><br />
 
-<div class="image">
-  <img src="images/Girishb&w.png" width="300px">
-</div>
+        I thrive on challenges and enjoy turning complex problems into elegant
+        solutions. Whether it's creating responsive user interfaces or
+        optimizing server-side performance, I'm always eager to push the
+        boundaries of what's possible in web development.<br /><br />
 
-<div id="about"></div>
-<div class="about common" >
-  <h2>About</h2>
-  <hr>
-  <p>I'm a dedicated Full Stack Web Developer with a passion for crafting exceptional online experiences. With a strong foundation in both front-end and back-end technologies, I specialize in transforming ideas into functional, user-friendly websites. My commitment to clean code, attention to detail, and a drive for innovation make me a valuable asset in the world of web development.<br><br>
+        When I'm not coding, you might find me experimenting with new
+        frameworks, attending web development meetups, or exploring the latest
+        design trends. I'm excited to collaborate on projects that demand
+        creativity, technical expertise, and a commitment to delivering
+        top-notch results.<br /><br />
 
-I thrive on challenges and enjoy turning complex problems into elegant solutions. Whether it's creating responsive user interfaces or optimizing server-side performance, I'm always eager to push the boundaries of what's possible in web development.<br><br>
+        Let's work together to bring your web development ideas to life. Feel
+        free to reach out and discuss how I can contribute to your next project.
+      </p>
+      <div id="skill"></div>
+    </div>
 
-When I'm not coding, you might find me experimenting with new frameworks, attending web development meetups, or exploring the latest design trends. I'm excited to collaborate on projects that demand creativity, technical expertise, and a commitment to delivering top-notch results.<br><br>
+    <div class="skill common">
+      <h2>Skills</h2>
+      <hr />
+      <ul id="ul">
+        <li>Python</li>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>Ajax</li>
+        <li>jQuery</li>
+        <li>Php</li>
+        <li>Node JS</li>
+        <li>Express JS</li>
+        <li>React JS</li>
+        <li>MySQL</li>
+        <li>MongoDB</li>
+        <li>Bootstrap</li>
+      </ul>
 
-Let's work together to bring your web development ideas to life. Feel free to reach out and discuss how I can contribute to your next project.</p>
-  <div id="skill"></div>
-</div>
+      <div class="input">
+        <input type="range" name="" value="60" disabled />
+        <input type="range" name="" value="80" disabled />
+        <input type="range" name="" value="80" disabled />
+        <input type="range" name="" value="75" disabled />
+        <input type="range" name="" value="70" disabled />
+        <input type="range" name="" value="50" disabled />
+        <input type="range" name="" value="80" disabled />
+        <input type="range" name="" value="70" disabled />
+        <input type="range" name="" value="80" disabled />
+        <input type="range" name="" value="60" disabled />
+        <input type="range" name="" value="70" disabled />
+        <input type="range" name="" value="70" disabled />
+        <input type="range" name="" value="80" disabled />
+      </div>
+    </div>
+    <br />
 
-<div class="skill  common" >
-  <h2>Skills</h2>
-  <hr>
-  <ul id="ul">
-    <li>Python</li>
-    <li>HTML</li>
-    <li>CSS</li>
-    <li>JavaScript</li>
-    <li>Ajax</li>
-    <li>jQuery</li>
-    <li>Php</li>
-    <li>Node JS</li>
-    <li>Express JS</li>
-    <li>React JS</li>
-    <li>MySQL</li>
-    <li>MongoDB</li>
-    <li>Bootstrap</li>
-  </ul>
+    <div class="dwn">
+      <a href="GirishResume1.pdf"
+        ><button type="button">Download Resume</button></a
+      >
+    </div>
 
-<div class="input">
-  <input type="range" name="" value="60" disabled>
-<input type="range" name="" value="80" disabled>
-<input type="range" name="" value="80" disabled>
-<input type="range" name="" value="75" disabled>
-<input type="range" name="" value="70" disabled>
-<input type="range" name="" value="50" disabled>
-<input type="range" name="" value="80" disabled>
-<input type="range" name="" value="70" disabled>
-<input type="range" name="" value="80" disabled>
-<input type="range" name="" value="60" disabled>
-<input type="range" name="" value="70" disabled>
-<input type="range" name="" value="70" disabled>
-<input type="range" name="" value="80" disabled>
+    <div id="project"></div>
+    <div class="project common">
+      <h2>Projects</h2>
+      <hr />
+      <div class="cms">
+        <h3>1. College Management System</h3>
+        <p>
+          Language Used - HTML, CSS, Javascript, Php, Bootstrap .<br />
+          It was our final year MCA project which was done by three more members
+          of mine . We together build a College Responsive website in which
+          There is a login panel that can be logged by Both Administration and
+          Teachers. There are many more features like Publishing Students Exam
+          Results, Can take Attendance, Student can see there result through
+          their Respective Roll Nos . We make this project to ease the Managing
+          Information Regarding Students, Teacher .
+        </p>
+        <figure>
+          <img src="images/clghome.png" />
+          <img src="images/course.png" />
+          <img src="images/contact.png" />
+          <img src="images/trainer.png" />
+          <img src="images/admin.png" />
+          <img src="images/adminhome.png" />
+          <img src="images/teacher.png" />
+          <img src="images/teacherhome.png" />
+          <img src="images/resulthome.png" />
+          <img src="images/enterresult.png" />
+          <img src="images/resultsearch.png" />
+          <img src="images/getresult.png" />
+        </figure>
+      </div>
 
-  
-</div>
+      <div class="cms">
+        <h3>2. Academic Institution Navigator</h3>
+        <p>
+          An academic institution navigator with a primary focus on searching
+          colleges and courses is a user-friendly online tool designed to
+          simplify the process of finding suitable colleges or universities and
+          specific academic programs or courses. Users can efficiently explore
+          their educational options by filtering search results based on
+          criteria such as location, academic field, degree level, and more.
+          This streamlined platform provides a quick and convenient way for
+          students and prospective learners to discover educational
+          opportunities that align with their interests and goals, making the
+          college and course selection process more accessible and tailored to
+          individual preferences.
+        </p>
+        <figure>
+          <img src="images/AINhome.png" />
+          <img src="images/AINabout.png" />
+          <img src="images/AINcontact.png" />
+          <img src="images/AINclg.png" />
+        </figure>
+      </div>
 
-</div><br>
+      <div class="cms">
+        <h3>3. Pizza Delivery Application (Ongoing)</h3>
+        <p>
+          Pizza Deliver-ease is a robust full-stack web application that
+          revolutionizes the pizza ordering and delivery experience. Built with
+          React, Node.js, and MongoDB, it offers both user and admin
+          functionalities, ensuring a seamless process from start to finish.
+          Users can register, verify their email addresses, and access a
+          user-friendly dashboard to browse pizza varieties and create
+          customized orders. Secure payment integration through Razorpay in test
+          mode guarantees safe transactions. On the admin side, there's a
+          dedicated login portal for complete system control, including
+          inventory management and order tracking. The system also employs
+          scheduled email notifications to alert admins when stock levels dip
+          below predefined thresholds. The real-time communication between
+          admins and users ensures updates on order status are immediate.
+          PizzaDeliver-ease provides a comprehensive solution, enhancing the
+          customer experience and simplifying operations for pizza businesses
+          seeking an online presence with modern features.
+        </p>
+        <figure>
+          <img src="images/pdahome1.png" />
+          <img src="images/pdahome2.png" />
+        </figure>
+      </div>
 
-<div class="dwn">
-  <a href="GirishResume1.pdf"><button type="button">Download Resume</button></a>
-</div>
+      <div class="cms">
+        <h3>4. Netflix Clone App</h3>
+        <p>
+          The objective of this project is to design and develop a web page that
+          resembles the Netflix interface, allowing users to browse and explore
+          a collection of movies and TV shows. The clone page should provide an
+          engaging and user-friendly experience.
+        </p>
+        <figure>
+          <img src="images/netfixhome.png" />
+          <img src="images/netflixrest1.png" />
+          <img src="images/netflixrest2.png" />
+        </figure>
+      </div>
+      <div class="cms">
+        <h3>5. Online Code Editor</h3>
+        <p>
+          The objective of this project is to design and develop an online code
+          editor that supports multiple programming languages, providing users
+          with an interface to write and execute code in a web browser. The code
+          editor should include features such as syntax highlighting, code
+          execution, and output display.{ HTML, CSS, JS}
+        </p>
+        <figure>
+          <img src="images/OnlineEditor.png" />
+        </figure>
+      </div>
+      <div class="cms">
+        <h3>6. Responsive Blog Website</h3>
+        <p>
+          The Responsive Blog Website Project is a web development initiative
+          focused on building a blog platform that excels in user-friendliness
+          and visual appeal, seamlessly adapting to diverse screen sizes and
+          devices. HTML serves as the structural foundation, organizing content
+          such as text, images, and links. CSS takes the lead in design and
+          layout, ensuring a consistent, aesthetically pleasing appearance,
+          while employing media queries to facilitate responsiveness. JavaScript
+          brings interactivity to the project, supporting dynamic content
+          loading, comment systems, and navigation menus, and contributing to a
+          smooth transition between various screen dimensions. This project's
+          ultimate goal is to provide an engaging, adaptable, and user-centric
+          blog platform that caters to a wide range of readers by skillfully
+          combining the languages of HTML, CSS, and JavaScript.
+        </p>
+        <figure>
+          <img src="images/blog1.png" />
+          <img src="images/blog2.png" />
+        </figure>
+      </div>
 
-<div id="project"></div>
-<div class="project common" >
-  <h2>Projects</h2>
-  <hr>
-  <div class="cms">
-    <h3>1. College Management System</h3>
-    <p>Language Used - HTML, CSS, Javascript, Php, Bootstrap .<br>
-      It was our final year MCA project which was done by three more members of mine . We together build a College Responsive website in which There is a login panel that can be logged by Both Administration and Teachers. There are many more features like Publishing Students Exam Results, Can take Attendance, Student can see there result through their Respective Roll Nos .
-We make this project to ease the Managing Information Regarding Students, Teacher .</p>
-    <figure>
-      <img src="images/clghome.png">
-      <img src="images/course.png">
-      <img src="images/contact.png">
-      <img src="images/trainer.png">
-      <img src="images/admin.png">
-      <img src="images/adminhome.png">
-      <img src="images/teacher.png">
-      <img src="images/teacherhome.png">
-      <img src="images/resulthome.png">
-      <img src="images/enterresult.png">
-      <img src="images/resultsearch.png">
-      <img src="images/getresult.png">
-    </figure>
-  </div>
+      <div class="cms">
+        <h3>7. Temperature Converter</h3>
+        <p>
+          The Temperature Converter Project is a web application designed to
+          simplify the process of converting temperatures between different
+          units. It harnesses the power of HTML, CSS, and JavaScript to create a
+          user-friendly and functional temperature conversion tool. HTML is
+          instrumental in shaping the user interface, providing input fields and
+          labels to guide users through the conversion process. CSS takes on the
+          responsibility of making the tool visually appealing and responsive,
+          ensuring it looks and works well on a variety of devices. JavaScript
+          is at the heart of the project, performing the actual temperature
+          conversions in real-time as users input values, thus adding
+          interactivity and efficiency to the tool. By skillfully combining
+          these three technologies, the Temperature Converter Project offers a
+          practical and effective solution for temperature conversions, making
+          it a valuable tool for a wide range of users.
+        </p>
+        <figure>
+          <img src="images/tem_con.png" />
+        </figure>
+      </div>
+      <div class="cms">
+        <h3>8. Daily Run Rate Project</h3>
+        <p>
+          The DRR (Daily Run Rate) Report is a crucial tool in our arsenal,
+          helping us track daily lead delivery with precision
+        </p>
+        <p>Language Used - Html ,Css , JavaScript ,Ajax</p>
+        <figure>
+          <img src="images/DRR.png" /><br />
+          <a
+            href="https://girishks6112000.github.io/Daily_run_rate/"
+            class="drrp"
+            >Click to see project</a
+          >
+        </figure>
+      </div>
+    </div>
 
-  <div class="cms">
-    <h3>2. Academic Institution Navigator</h3>
-    <p>An academic institution navigator with a primary focus on searching colleges and courses is a user-friendly online tool designed to simplify the process of finding suitable colleges or universities and specific academic programs or courses. Users can efficiently explore their educational options by filtering search results based on criteria such as location, academic field, degree level, and more. This streamlined platform provides a quick and convenient way for students and prospective learners to discover educational opportunities that align with their interests and goals, making the college and course selection process more accessible and tailored to individual preferences.</p>
-    <figure>
-      <img src="images/AINhome.png">
-      <img src="images/AINabout.png">
-      <img src="images/AINcontact.png">
-      <img src="images/AINclg.png">
-  
-    </figure>
-  </div>
+    <div class="contact common" id="contact">
+      <h2>Contact Me</h2>
+      <hr />
+      <br />
+      <p class="address">
+        <em><span>Address -</span>Bhubaneswar Odisha , 751003</em>
+      </p>
+      <p class="mail">
+        <em><span>Email -</span>girishsahoo.3979@gmail.com</em>
+      </p>
+      <p class="mob">
+        <em><span>Mobile no -</span>9348644871</em>
+      </p>
+    </div>
 
-  <div class="cms">
-    <h3>3. Pizza Delivery Application (Ongoing)</h3>
-    <p>Pizza Deliver-ease is a robust full-stack web application that revolutionizes the pizza ordering and delivery experience. Built with React, Node.js, and MongoDB, it offers both user and admin functionalities, ensuring a seamless process from start to finish. Users can register, verify their email addresses, and access a user-friendly dashboard to browse pizza varieties and create customized orders. Secure payment integration through Razorpay in test mode guarantees safe transactions. On the admin side, there's a dedicated login portal for complete system control, including inventory management and order tracking. The system also employs scheduled email notifications to alert admins when stock levels dip below predefined thresholds. The real-time communication between admins and users ensures updates on order status are immediate. PizzaDeliver-ease provides a comprehensive solution, enhancing the customer experience and simplifying operations for pizza businesses seeking an online presence with modern features.</p>
-    <figure>
-      <img src="images/pdahome1.png"> 
-      <img src="images/pdahome2.png">  
-    </figure>
-  </div>
-
-  <div class="cms">
-    <h3>4. Netflix Clone App</h3>
-    <p>The objective of this project is to design and develop a web page that resembles the Netflix
-interface, allowing users to browse and explore a collection of movies and TV shows. The clone
-page should provide an engaging and user-friendly experience.</p>
-    <figure>
-      <img src="images/netfixhome.png">
-      <img src="images/netflixrest1.png">
-      <img src="images/netflixrest2.png">
-         
-    </figure>
-  </div>
-<div class="cms">
-    <h3>5. Online Code Editor</h3>
-    <p>The objective of this project is to design and develop an online code editor that supports
-multiple programming languages, providing users with an interface to write and execute code
-in a web browser. The code editor should include features such as syntax highlighting, code
-execution, and output display.{ HTML, CSS, JS}</p>
-    <figure>
-      <img src="images/OnlineEditor.png">       
-    </figure>
-  </div>
-  <div class="cms">
-    <h3>6. Responsive Blog Website</h3>
-    <p>The Responsive Blog Website Project is a web development initiative focused on building a blog platform that excels in user-friendliness and visual appeal, seamlessly adapting to diverse screen sizes and devices. HTML serves as the structural foundation, organizing content such as text, images, and links. CSS takes the lead in design and layout, ensuring a consistent, aesthetically pleasing appearance, while employing media queries to facilitate responsiveness. JavaScript brings interactivity to the project, supporting dynamic content loading, comment systems, and navigation menus, and contributing to a smooth transition between various screen dimensions. This project's ultimate goal is to provide an engaging, adaptable, and user-centric blog platform that caters to a wide range of readers by skillfully combining the languages of HTML, CSS, and JavaScript.</p>
-    <figure>
-      <img src="images/blog1.png">    
-      <img src="images/blog2.png">    
-    </figure>
-  </div>
-
-  <div class="cms">
-    <h3>7. Temperature Converter </h3>
-    <p>
-      The Temperature Converter Project is a web application designed to simplify the process of converting temperatures between different units. It harnesses the power of HTML, CSS, and JavaScript to create a user-friendly and functional temperature conversion tool. HTML is instrumental in shaping the user interface, providing input fields and labels to guide users through the conversion process. CSS takes on the responsibility of making the tool visually appealing and responsive, ensuring it looks and works well on a variety of devices. JavaScript is at the heart of the project, performing the actual temperature conversions in real-time as users input values, thus adding interactivity and efficiency to the tool. By skillfully combining these three technologies, the Temperature Converter Project offers a practical and effective solution for temperature conversions, making it a valuable tool for a wide range of users. </p>
-    <figure>
-      <img src="images/tem_con.png">       
-    </figure>
-  </div>
-  <div class="cms">
-    <h3>8. Daily Run Rate Project</h3>
-    <p>The DRR (Daily Run Rate) Report is a crucial tool in our arsenal, helping us track daily lead delivery with precision</p>
-    <p>Language Used - Html ,Css , JavaScript ,Ajax</p>
-    <figure>
-      <img src="images/DRR.png"><br>
-      <a href="https://girishks6112000.github.io/Daily_run_rate/" class="drrp" >Click to see project</a>     
-    </figure>
-  </div>
-  
-</div>
-
-
-  <div class="contact common" id="contact">
-<h2>Contact Me</h2>
-    <hr><br>
-    <p class="address"><em><span>Address -</span>Bhubaneswar Odisha , 751003</em></p>
-    <p class="mail"><em><span>Email -</span>girishsahoo.3979@gmail.com</em></p>
-    <p class="mob"><em><span>Mobile no -</span>9348644871</em></p>
-</div>
-  
-<footer>
-  <div class="social"> 
- <a href="https://www.facebook.com/girish.sahoo.3979/" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="#543BEF" class="bi bi-facebook fb" viewBox="0 0 16 16" >
-  <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
-</svg></a>
- <a href="https://www.instagram.com/girish_sahoo_/" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="#FF00C2  " class="bi bi-instagram " viewBox="0 0 16 16">
-  <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
-</svg></a> 
- <a href="http://www.linkedin.com/in/girish-sahoo-a4197a212" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="blue" class="bi bi-linkedin"  viewBox="0 0 16 16">
-  <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
-</svg></a> 
- <a href="https://github.com/GirishKS6112000" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="white" class="bi bi-github " viewBox="0 0 16 16">
-  <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
-</svg></a> 
-</div>
-<p>Copyright 2023 - GIRISH CHANDRA SAHOO</p>
-
-</footer>
-
-</body>
+    <footer>
+      <div class="social">
+        <a href="https://www.facebook.com/girish.sahoo.3979/" target="_blank"
+          ><svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="30"
+            height="30"
+            fill="#543BEF"
+            class="bi bi-facebook fb"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"
+            /></svg
+        ></a>
+        <a href="https://www.instagram.com/girish_sahoo_/" target="_blank"
+          ><svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="30"
+            height="30"
+            fill="#FF00C2  "
+            class="bi bi-instagram"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"
+            /></svg
+        ></a>
+        <a
+          href="http://www.linkedin.com/in/girish-sahoo-a4197a212"
+          target="_blank"
+          ><svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="30"
+            height="30"
+            fill="blue"
+            class="bi bi-linkedin"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"
+            /></svg
+        ></a>
+        <a href="https://github.com/GirishKS6112000" target="_blank"
+          ><svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="30"
+            height="30"
+            fill="white"
+            class="bi bi-github"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"
+            /></svg
+        ></a>
+      </div>
+      <p>Copyright 2023 - GIRISH CHANDRA SAHOO</p>
+    </footer>
+  </body>
 </html>
