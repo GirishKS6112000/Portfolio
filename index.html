@@ -7,7 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Portfolio</title>
   </head>
-  <body>
+  <body onload="preloader()">
+    <div id="loading"></div>
     <div class="nav">
       <div class="navbar">
         <a class="nav-home" href="#"
@@ -400,5 +401,16 @@
       </div>
       <p>Copyright 2023 - GIRISH CHANDRA SAHOO</p>
     </footer>
+
+
+    <script type="text/javascript">
+      
+      function preloader(){
+        setTimeout(()=>{
+          document.getElementById("loading").style.display="none"
+        },9000)
+      }
+    </script>
+
   </body>
 </html>
